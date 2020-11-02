@@ -1,0 +1,32 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Weekopdracht_01-04</title>
+    
+    <script>
+        function knopklik(deknop){
+            var zin = "Je klikte op de knop ";
+            var totaal = zin + deknop;
+            var appenddata = document.getElementById("box1");
+            // console.log(totaal);
+            appenddata.insertAdjacentHTML('beforebegin', '<p>' + totaal + '</P>');
+        }
+
+    </script>
+    
+    
+    
+    </head>
+    <body>
+        <input type="button" value="Knop A" onclick="knopklik('A')">
+        <input type="button" value="Knop B" onclick="knopklik('B')">
+        <input type="button" value="Knop C" onclick="knopklik('C')">
+        <input type="button" value="Knop D" onclick="knopklik('D')">
+    
+        <div>
+            <p id="box1"> </p>
+        </div>
+    </body>
+    </html>
